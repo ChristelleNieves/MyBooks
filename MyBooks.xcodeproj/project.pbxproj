@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1873A1269946B700C8302D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1873A0269946B700C8302D /* Book.swift */; };
+		BC1873A32699470500C8302D /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1873A22699470500C8302D /* Library.swift */; };
+		BC1873A526994B5400C8302D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1873A426994B5400C8302D /* DetailViewController.swift */; };
 		BCD2F1CC2699400E0091F179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2F1CB2699400E0091F179 /* AppDelegate.swift */; };
 		BCD2F1CE2699400E0091F179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2F1CD2699400E0091F179 /* SceneDelegate.swift */; };
-		BCD2F1D02699400E0091F179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2F1CF2699400E0091F179 /* ViewController.swift */; };
 		BCD2F1D32699400E0091F179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD2F1D12699400E0091F179 /* Main.storyboard */; };
 		BCD2F1D5269940130091F179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD2F1D4269940130091F179 /* Assets.xcassets */; };
 		BCD2F1D8269940130091F179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD2F1D6269940130091F179 /* LaunchScreen.storyboard */; };
+		BCD2F1E42699432A0091F179 /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2F1E32699432A0091F179 /* LibraryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1873A0269946B700C8302D /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		BC1873A22699470500C8302D /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		BC1873A426994B5400C8302D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BCD2F1C82699400E0091F179 /* MyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD2F1CB2699400E0091F179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD2F1CD2699400E0091F179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCD2F1CF2699400E0091F179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCD2F1D22699400E0091F179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCD2F1D4269940130091F179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCD2F1D7269940130091F179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCD2F1D9269940130091F179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD2F1E32699432A0091F179 /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		BCD2F1CA2699400E0091F179 /* MyBooks */ = {
 			isa = PBXGroup;
 			children = (
+				BCD2F1E2269941B70091F179 /* View Controllers */,
+				BCD2F1E1269941AD0091F179 /* Model */,
 				BCD2F1CB2699400E0091F179 /* AppDelegate.swift */,
 				BCD2F1CD2699400E0091F179 /* SceneDelegate.swift */,
-				BCD2F1CF2699400E0091F179 /* ViewController.swift */,
 				BCD2F1D12699400E0091F179 /* Main.storyboard */,
 				BCD2F1D4269940130091F179 /* Assets.xcassets */,
 				BCD2F1D6269940130091F179 /* LaunchScreen.storyboard */,
 				BCD2F1D9269940130091F179 /* Info.plist */,
 			);
 			path = MyBooks;
+			sourceTree = "<group>";
+		};
+		BCD2F1E1269941AD0091F179 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC1873A0269946B700C8302D /* Book.swift */,
+				BC1873A22699470500C8302D /* Library.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCD2F1E2269941B70091F179 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCD2F1E32699432A0091F179 /* LibraryTableViewController.swift */,
+				BC1873A426994B5400C8302D /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCD2F1D02699400E0091F179 /* ViewController.swift in Sources */,
 				BCD2F1CC2699400E0091F179 /* AppDelegate.swift in Sources */,
+				BCD2F1E42699432A0091F179 /* LibraryTableViewController.swift in Sources */,
+				BC1873A1269946B700C8302D /* Book.swift in Sources */,
+				BC1873A526994B5400C8302D /* DetailViewController.swift in Sources */,
 				BCD2F1CE2699400E0091F179 /* SceneDelegate.swift in Sources */,
+				BC1873A32699470500C8302D /* Library.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ELWJ3MGU37;
 				INFOPLIST_FILE = MyBooks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = christellenieves.MyBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ELWJ3MGU37;
 				INFOPLIST_FILE = MyBooks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = christellenieves.MyBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
